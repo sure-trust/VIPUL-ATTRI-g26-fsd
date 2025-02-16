@@ -1,200 +1,112 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
 
-html, body {
+}
+html,body{
     height: 100%;
     width: 100%;
 }
 
-.navbar {
+
+.navbar{
     height: 10%;
-    padding: 5px 5%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-}
+   padding-left: 5%;
+   padding-top: 10%;
+   padding-top:5px;
+   display: flex;
 
-.img {
+}
+.img{
     margin-top: 10px;
-    max-width: 100%;
 }
-
-input {
+input{
     margin-top: 10px;
     height: 30px;
-    width: 100%;
-    max-width: 400px;
+    width: 400px;
     margin-left: 15px;
 }
-
-#Search {
+#Search{
     margin-left: 10px;
-    margin-top: 20px;
+margin-top: 20px;
 }
-
-.donation {
-    margin-left: auto;
-    margin-top: 10px;
+.donation{
+    margin-left: 500px;
+    justify-content: space-between;
+    margin-top: 10px
+    ;
+}
+.main-page{
     display: flex;
-    gap: 10px;
 }
-
-.main-page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.contents {
+.contents{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    gap: 30px;
-    width: fit-content;
+    justify-content: space-around;
+    gap:30px;
+    width: 100px;
     margin-left: 70px;
+    text-decoration: none;
 }
+.main{
 
-.main {
-    width: 100%;
-    max-width: 35%;
+    height: screen;
+    width: 35%;
+    gap: 100px;
     margin-left: 100px;
-}
 
-.linus {
-    height: auto;
-    width: 100%;
-    max-width: 250px;
-    background-color: #F8F9FA;
+    
+}
+.main:p{
+    gap: 10px;
+    text-spacing-trim: 100px;
+}
+.linus{
+    height: 750px;
+    width: 250px;
+   background-color: #F8F9FA;
     margin-top: 70px;
     border: 2px solid black;
     padding: 40px;
 }
+.other{
+    width: screen;
+    height: 300px;
+    /* background-color: blue; */
+    margin-left: 260px;
+    margin-right: 100px;
 
-.other {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-    margin: 0 auto;
 }
-
-table {
-    width: 100%;
-    max-width: 700px;
-    margin-top: 20px;
-    border-collapse: collapse;
+table{
+    width: 300px;
 }
-
-th, td {
+table, th, td {
     border: 1px solid black;
-    text-align: center;
-    padding: 8px;
-}
-
-th {
+    border-collapse: collapse;
+  }
+  table{
+    margin-top: 20px;
+    width: 700px;
+  }
+  th{
     background-color: #EAECF0;
-}
-
-td {
+  }
+  td{
     background-color: #F8F9FA;
-}
-
-.side {
-    height: auto;
-    width: 100%;
-    max-width: 300px;
+    gap: 20px;
+    text-align: center;
+  }
+  th:nth-child(3){
+   width: 500px;
+  }
+  th:nth-child(2){
+    width: 200px;
+  }
+  .side{
+    height: 500px;
+    width: 300px;
+    /* background-color: blue; */
     margin-top: 70px;
     margin-left: 20px;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .main {
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .donation {
-        margin-left: 0;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .contents {
-        margin-left: 0;
-        align-items: center;
-    }
-
-    .linus {
-        max-width: 100%;
-    }
-
-    .side {
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 768px) {
-    .main-page {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar {
-        text-align: center;
-    }
-
-    input {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    table {
-        width: 100%;
-    }
-
-    .side, .linus {
-        width: 100%;
-        max-width: 90%;
-        margin: 20px auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    input {
-        width: 90%;
-        max-width: 100%;
-    }
-
-    .main {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    .contents {
-        align-items: center;
-        margin-left: 0;
-    }
-
-    .donation {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-}
+  }
