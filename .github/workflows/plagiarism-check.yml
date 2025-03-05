@@ -14,7 +14,6 @@ permissions:
 jobs:
   check-plagiarism:
     runs-on: ubuntu-latest
-    
     steps:
       - uses: actions/checkout@v3
         with:
@@ -54,13 +53,11 @@ jobs:
 
           # Get changed files
           changed_files = [f.filename for f in pr.get_files() if f.filename.startswith('Assignments/Submissions/')]
-          
           plagiarism_found = False
           comment = '## Plagiarism Check Results\n\n'
 
           for file in changed_files:
               results = check_plagiarism(file, 'Assignments/Submissions')
-              
               if results:
                   plagiarism_found = True
                   comment += f'### {file}\n'
